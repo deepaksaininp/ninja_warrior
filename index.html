@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Warrior</title>
+    <link rel="stylesheet" href="assets/scss/app.css">
+
+</head>
+
+<body id="page">
+    <div class="page">
+        <div class="page_wrapper">
+            <div class="start_popup" id="start_popup"> Roll the dice in the bottom of your page to start the game
+            </div>
+            <!-- <div class="welcome_popup">
+                <h1 class="title" id="instruction_title">Instruction Box</h1>
+                <div class="divider_show"></div>
+                <p class="description">Get ready for the ultimate waste management battle! Answer questions on different
+                    types
+                    of waste, sustainable practices, and what is biodegradable. Help your Ninja Avatar win
+                    the game and become a waste warrior!</p>
+                <p class="desc_instruction">1. Start the game by rolling the dice. Your Ninja Avatar will move on the
+                    board.
+                </p>
+                <p class="desc_instruction">2. A card will pop on the screen according to the box your Avatar lands on:
+                    green
+                    for
+                    sustainable practices, orange for types of waste and yellow for what’s biodegradable.</p>
+                <p class="desc_instruction">3. Answer the question correctly on the screen to move forward .</p>
+                <p class="desc_instruction">4. If you answer incorrectly, the Ninja Avatar will move back to the square
+                    where
+                    it was
+                    earlier.</p>
+                <p class="desc_instruction">5. Check your final scores under Gains and Losses.</p>
+                <p class="desc_instruction mt-2">6. Answer all questions correctly to win the game and become a waste
+                    warrior.</p>
+
+                <div class="text-center">
+                    <button type="button" class="start_now" id="start_now">START NOW</button>
+                    <button type="button" class="start_now" id="close_now">CLOSE</button>
+                </div>
+            </div> -->
+            <div class="winner_popup"><img src="./assets/images/you_win.png" alt="">
+                <div style="display: flex;">
+                    <button type="button">SHARE</button>
+                    <button type="button" id="restart">PLAY AGAIN</button>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="slot_container">
+                <div class="start">START</div>
+                <div class="exit">EXIT</div>
+                <img src="./assets/images/arrow_start.png" class="start_img" alt="Star Arrow">
+                <img src="./assets/images/arrow_start.png" class="end_img" alt="Star Arrow">
+                <div class="mover_shadow"> <img src="./assets/images/player-shadow.png" alt="Player Shadow"></div>
+                <div class="mover" id="mover"><img src="./assets/images/player.png" alt="Player"></div>
+            </div>
+            <div class="counter_container">
+                <div class="counter--item title">Attempt</div>
+                <div class="counter--item">
+                    <div class="result">
+                        <div class="result_header">GAINS </div>
+                        <div class="result_content" id="gain_score">000</div>
+                    </div>
+                </div>
+                <div class="counter--item p-0">
+                    <div class="result">
+                        <div class="result_header">LOSSES</div>
+                        <div class="result_content" id="lose_score">000</div>
+                    </div>
+                </div>
+                <div class="counter--item"> </div>
+                <button class="counter--dice" id="diceHandler"><img id="dice-img" width="50"
+                        src="assets/images/dice-1.png" alt=""></button>
+            </div>
+            <!-- <div class="footer">
+                <h4 class="instructor_title" id="instructor_title">Instruction Box</h4>
+            </div> -->
+            <div class="modal" id="modal">
+                <div class="count_point_losse">1</div>
+                <div class="count_point_gains">1</div>
+                <button class="close" id="close"><img src="assets/images/cancel.svg" alt=""></button>
+                <div class="header" id="modal_header"> </div>
+                <div class="content" id="content">
+                    <h6 class="modal_question" id="modal_question"> </h6>
+                    <img src="" id="modal_img" alt="">
+                    <div id="actions"></div>
+                </div>
+                <div class="content1" id="content1">
+                    <div class="box">
+                        <h2 class="answer">Answer</h2>
+                        <h6 id="content1_head"></h6>
+                        <p id="content1_text1"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="backdrop"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="assets/scripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.js"
+        integrity="sha512-ODKvqkCvM5zm8tfSi4fhlf/TQN3K2JXNxOjsS85pU3Ugw4ZdP5i1fvzB49QFXUJIy2gBLIyI7XZ/Qqbq7GjJkg=="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
